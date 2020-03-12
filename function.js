@@ -3,8 +3,6 @@
 // var dice1 = document.getElementById("dice1");
 // var dice2 = document.getElementById("dice2");
 var diceRollButton = document.getElementById("diceRollerbutton");
-var goForward = document.getElementById("tryAgain");
-var goBack = document.getElementById("goBack");
 
 
 
@@ -28,22 +26,21 @@ function diceRollerFunction(){
      var i = 0;
 
      
- document.getElementById("changeColour").style.backgroundColor = myArray[i];
-     goForward=function(){
+ document.getElementById("diceRollerbutton").style.backgroundColor = myArray[i];
+     changeColour=function(){
 
          if(i == myArray.length-1) 
          {i=0;}
          else
          {i=i+1;}
 
-       document.getElementById("changeColour").style.backgroundColor = myArray[i];
+       document.getElementById("diceRollerbutton").style.backgroundColor = myArray[i];
        };
     
     //dice1.innerText=randomNumber1;
     //dice2.innerText=randomNumber2;
 
-console.log(goForward);
-console.log(goForward);
+console.log(changeColour);
     console.log(randomNumber1 + "" + randomNumber2);
     console.log(diceRollMatchs);
     //console.log("testing");
