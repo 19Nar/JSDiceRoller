@@ -34,7 +34,7 @@ function diceRollerFunction(){
          else
          {i=i+1;}
 
-       document.getElementById("changeColour").style.backgroundColor = myArray[i];
+       document.getElementByClassName("changeColour").style.backgroundColor = myArray[i];
        };
     
     //dice1.innerText=randomNumber1;
