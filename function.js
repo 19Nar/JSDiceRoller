@@ -26,21 +26,21 @@ function diceRollerFunction(){
      var i = 0;
 
      
- document.getElementById("diceRollerbutton").style.backgroundColor = myArray[i];
-     changeColour=function(){
+ document.getElementByClassName("changeColour").style.backgroundColor = myArray[i];
+     chngColour=function(){
 
          if(i == myArray.length-1) 
          {i=0;}
          else
          {i=i+1;}
 
-       document.getElementById("diceRollerbutton").style.backgroundColor = myArray[i];
+       document.getElementById("changeColour").style.backgroundColor = myArray[i];
        };
     
     //dice1.innerText=randomNumber1;
     //dice2.innerText=randomNumber2;
 
-console.log(changeColour);
+console.log(chngColour);
     console.log(randomNumber1 + "" + randomNumber2);
     console.log(diceRollMatchs);
     //console.log("testing");
